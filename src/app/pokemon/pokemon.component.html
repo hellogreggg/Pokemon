@@ -1,0 +1,9 @@
+<div class="card-deck">
+  <div class="card" *ngFor="let pokemon of pokemon">
+    <img class="card-img-top" src="{{pokemon.img}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{pokemon.name}}</h5>
+      <p class="card-text">{{pokemon.details | slice:0:100 }}...</p>
+    </div>
+  </div>
+</div>
